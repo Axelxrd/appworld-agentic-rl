@@ -1,0 +1,12 @@
+-r requirements-base.txt
+# Install torch first from the PyTorch CUDA selector.
+transformers @ git+https://github.com/huggingface/transformers.git@7ea2320c76117e6742364808a666ef6f2fb40a67
+accelerate>=1,<2
+peft>=0.15,<1
+codetiming
+dill
+tensordict>=0.8,<=0.10,!=0.9
+torchdata
+tensorboard
+fastapi
+uvicorn

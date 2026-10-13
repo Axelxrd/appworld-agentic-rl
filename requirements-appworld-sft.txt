@@ -1,0 +1,21 @@
+# Install a CUDA-matched torch build first; do not use this file to replace it.
+# This Transformers commit is the known Qwen3.5-compatible revision used by the
+# reference SFT implementation.
+transformers @ git+https://github.com/huggingface/transformers.git@7ea2320c76117e6742364808a666ef6f2fb40a67
+accelerate>=1,<2
+peft>=0.15,<1
+codetiming
+dill
+pandas>=2
+pyarrow>=19
+hydra-core
+datasets
+numpy>=2,<3
+packaging>=20
+tensordict>=0.8,<=0.10,!=0.9
+torchdata
+tensorboard
+fastapi
+uvicorn
+# Backward-compatible alias. New installations should use requirements-sft.txt.
+-r requirements-sft.txt

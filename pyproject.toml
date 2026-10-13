@@ -1,0 +1,16 @@
+[project]
+name = "appworld-agentic-rl"
+version = "0.1.0"
+description = "AppWorld-based long-horizon agentic RL training pipeline."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+appworld-agentic-rl = "appworld_agentic_rl.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["appworld_agentic_rl*"]

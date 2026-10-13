@@ -1,0 +1,4 @@
+# Backward-compatible Hydra alias.  The canonical recipe now reflects its
+# actual 160K model context in the filename.
+defaults:
+  - appworld_grpo_lightweight_event_credit_160k

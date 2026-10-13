@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the repository and AppWorld."
+title: "AppWorld Agentic RL"
+authors:
+  - name: "AppWorld Agentic RL contributors"
+version: "0.1.0"
+date-released: 2026-10-12
+license: MIT
+abstract: "A long-horizon agentic reinforcement-learning pipeline for AppWorld."

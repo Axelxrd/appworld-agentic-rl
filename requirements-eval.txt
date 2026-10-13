@@ -1,0 +1,5 @@
+-r requirements-base.txt
+wandb>=0.17
+# Frozen dev/final evaluation uses the served checkpoint's chat template for
+# tokenizer-exact context-compaction thresholds.
+transformers @ git+https://github.com/huggingface/transformers.git@7ea2320c76117e6742364808a666ef6f2fb40a67

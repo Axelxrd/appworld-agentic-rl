@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+# Keep local-only agent instructions and generated experiment material out of
+# GitHub source archives even if a contributor force-adds them by mistake.
+AGENTS.md export-ignore
+artifacts/ export-ignore
+data/ export-ignore
+models/ export-ignore
+checkpoints/ export-ignore

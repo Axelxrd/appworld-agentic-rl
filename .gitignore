@@ -1,0 +1,76 @@
+# Local environments and caches
+.venv/
+.venv-*/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.pytest_tmp/
+.pytest_codex_*/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+AGENTS.md
+PRM-*.txt
+
+# These are local historical investigation notes. The public repository keeps
+# the current, internally consistent method and reproducibility documents in
+# docs/ instead.
+research/
+
+# Local review copy assembled from the public release file set.
+github_release/
+
+# Superseded local probes and setup helpers are intentionally not part of the
+# public training/evaluation contract.
+scripts/evaluate_sft_checkpoints.sh
+scripts/run_frozen_base_matrix.sh
+scripts/setup_cs336_eval.sh
+scripts/smoke_cs336_eval.sh
+
+# Generated data, models, checkpoints, logs, and evaluation results
+artifacts/
+checkpoints/
+models/
+outputs/
+logs/
+wandb/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+
+# AppWorld runtime data can contain task ground truth and simulated credentials.
+data/
+appworld_runtime/
+
+# Vendored environments and private reference workspaces
+appworld/
+agentic-grpo-longhorizon/
+shopping-grpo-longhorizon/
+shopping-grpo-longhorizon-fresh/
+
+# Local analysis, deployment scratch files, and experiment outputs
+.tmp/
+.analysis/
+experiments/
+*.log
+
+# Screenshots and ad-hoc exports are not required to reproduce the pipeline.
+ScreenShot_*
+*.jpg
+*.jpeg
+*.png

@@ -1,0 +1,14 @@
+- name: appworld_agent
+  _target_: appworld_agentic_rl.verl_agent_loop.AppWorldAgentLoop
+  appworld_root: ${oc.env:APPWORLD_ROOT,artifacts/appworld_rl_v1_root}
+  experiment_prefix: appworld_grpo_lightweight_event_credit
+  max_steps: 50
+  process_reward_lambda: 0.3
+  split: train
+  context_compaction_enable: true
+  context_policy_version: appworld-structured-memory-token-v1
+  context_compaction_trigger_tokens: 65536
+  context_compaction_target_tokens: 49152
+  context_compaction_min_generation_tokens: 4096
+  context_preserve_recent_groups: 4
+  event_ppo_mode: strict

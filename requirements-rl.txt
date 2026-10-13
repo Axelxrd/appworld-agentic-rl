@@ -1,0 +1,10 @@
+-r requirements-sft.txt
+# The agent loop imports veRL 0.9's v1 TransferQueue interfaces.
+# Install a CUDA-matched PyTorch build first, then install these top-level
+# framework versions in an isolated Linux GPU environment.
+verl==0.9.0
+# vLLM must be selected to match the installed PyTorch/CUDA build. Record the
+# resolved version with `python -m pip freeze` in each experiment artifact.
+vllm>=0.7,<1
+wandb>=0.17
+ray[default]>=2.40,<3
